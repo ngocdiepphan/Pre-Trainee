@@ -1,0 +1,23 @@
+.header-section {
+  height: 88px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  @include flex-column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  color: var(--color-tertiary);
+
+  @include desktop {
+    height: 48px;
+    @include flex-row
+  }
+
+  &__wrapper {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+

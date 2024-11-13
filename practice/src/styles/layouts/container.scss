@@ -1,0 +1,34 @@
+.container {
+  background-color: var(--background-color-second);
+  padding-left: 56px;
+  padding-right: 56px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.container-content {
+  background-color: var(--background-color-primary);
+}
+
+.container-aqua {
+  background-color: var(--background-color-aqua);
+  width: 100%;
+}
+
+.container-form {
+  background-color: var(--background-color-tertiary);
+  width: 100%;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    padding-left: 250px;
+    padding-right: 250px;
+    max-width: 1920px;
+  }
+
+  .container-aqua {
+    background-color: var(--background-color-aqua);
+    max-width: 1920px;
+  }
+}
