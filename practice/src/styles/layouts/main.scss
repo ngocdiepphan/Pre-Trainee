@@ -1,0 +1,11 @@
+.main-section {
+  @include flex-column;
+  margin-top: 90px;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    gap: 88px;
+    margin-top: 122px;
+  }
+}

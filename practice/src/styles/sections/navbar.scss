@@ -5,6 +5,10 @@
   justify-content: space-between;
   height: 90px;
 
+  @include desktop {
+    padding-left: 203px;
+  }
+
   &__action {
     display: flex;
     position: relative;
@@ -25,7 +29,6 @@
   &__wrapper {
     @include flex-row;
     align-items: center;
-    gap: 10px;
 
     @include desktop {
       gap: 35px;
@@ -58,5 +61,6 @@
     gap: 45px;
     font-weight: 600;
     align-items: center;
+    padding-right: 13px;
   }
 }
