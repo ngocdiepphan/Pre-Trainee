@@ -1,0 +1,23 @@
+.btn {
+  border: none;
+  background-color: var(--btn-color-primary);
+  @include cursor;
+
+  &:hover {
+    background-color: #fd3411;
+  }
+}
+
+.btn-signIn {
+  width: 70px;
+  height: 35px;
+  color: var(--color-tertiary);
+  border-radius: 10px;
+  font-family: var(--font-primary);
+
+  @include desktop {
+    font-size: 18px;
+    width: 131px;
+    height: 53px;
+  }
+}

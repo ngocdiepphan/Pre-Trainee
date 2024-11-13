@@ -1,0 +1,62 @@
+.nav {
+  background: var(--background-color-primary);
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+
+  &__action {
+    display: flex;
+    position: relative;
+    gap: 10px;
+  }
+
+  &__icon-menu {
+    background-image: url("../assets/images/icons/nav/menu.svg");
+    width: 20px;
+    height: 20px;
+    display: block;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    @include flex-row;
+    align-items: center;
+    gap: 10px;
+
+    @include desktop {
+      gap: 35px;
+    }
+  }
+
+  &__item,
+  a {
+    display: none;
+    color: var(--color-primary);
+
+    &:hover {
+      font-weight: 400;
+      color: var(--color-quaternary);
+      border-bottom: 1px solid #ff5a3c;
+      font-family: var(--font-primary);
+    }
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__links,
+  a {
+    @include flex-row;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: 18px;
+    gap: 45px;
+    font-weight: 600;
+    align-items: center;
+  }
+}
