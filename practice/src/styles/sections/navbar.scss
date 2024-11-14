@@ -2,11 +2,12 @@
   background: var(--background-color-primary);
   @include flex-row;
   align-items: center;
-  justify-content: space-between;
+  gap: 25px;
   height: 90px;
 
   @include desktop {
     padding-left: 203px;
+    gap: 327px;
   }
 
   &__action {

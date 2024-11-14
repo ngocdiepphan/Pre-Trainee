@@ -2,7 +2,11 @@
   padding-left: 56px;
   padding-right: 56px;
   width: 100%;
-  max-width: 480px;
+  // max-width: 480px;
+
+  @include desktop {
+
+  }
 }
 
 .container-content {
@@ -11,4 +15,15 @@
   @include desktop {
     margin-left: 375px;
   }
+}
+
+.container-wrapper {
+  @include desktop {
+    min-width: 1200px;
+  }
+}
+
+.container-sidebar {
+  padding-left: 34px;
+  padding-right: 34px;
 }

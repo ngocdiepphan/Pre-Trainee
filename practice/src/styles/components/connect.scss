@@ -1,0 +1,43 @@
+.connect {
+  margin-top: 42px;
+  margin-bottom: 46px;
+  @include flex-column;
+  gap: 20px;
+  align-items: center;
+  border-top: 1px solid var(--border-primary);
+  padding-top: 42px;
+
+  &:hover {
+    border-top: 2px solid #7d7d7d;
+  }
+
+  @include desktop {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__represent {
+    @include flex-row;
+    gap: 10px;
+  }
+
+  &__social {
+    @include flex-row;
+    gap: 11px;
+  }
+
+  &__icon-twitter {
+    background-image: url("../assets/images/icons/connect/twitter.svg");
+    width: 34px;
+    height: 31px;
+  }
+
+  &__icon-facebook {
+    background-image: url("../assets/images/icons/connect/facebook.svg");
+  }
+
+  &__icon-instagram {
+    background-image: url("../assets/images/icons/connect/instagram.svg");
+  }
+}

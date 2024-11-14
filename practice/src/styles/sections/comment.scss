@@ -1,0 +1,103 @@
+.comment {
+  @include flex-column;
+  font-family: var(--font-secondary);
+
+  &__item {
+    @include flex-row;
+    gap: 24px;
+    padding-top: 18px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid #eeeff2;
+
+    &:hover {
+      border-bottom: 2px solid #7d7d7d;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:nth-child(2) {
+      padding-left: 46px;
+    }
+  }
+
+  &__image {
+    width: 55px;
+    height: 55px;
+
+    @include desktop {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  &__content {
+    @include flex-column;
+    gap: 12px;
+  }
+
+  &__profile {
+    @include flex-column;
+    gap: 5px;
+  }
+
+  &__username {
+    font-weight: 600;
+    color: #000;
+  }
+
+  &__wrapper {
+    @include flex-row;
+    gap: 27px;
+  }
+
+  &__reply {
+    @include flex-row;
+    gap: 6px;
+
+    &__description {
+      font-size: 14px;
+
+      &:hover {
+        color: var(--color-quaternary);
+      }
+    }
+  }
+
+  &__icon-reply {
+    background-image: url("../assets/images/icons/comment/reply.svg");
+    width: 15px;
+    height: 14px;
+
+    &:hover {
+      background-image: url("../assets/images/icons/comment/reply-hover.svg");
+    }
+  }
+
+  &__calendar {
+    @include flex-row;
+    gap: 4px;
+
+    &__date {
+      gap: 1px;
+      color: #8c8c8c;
+      font-size: 12px;
+    }
+  }
+
+  &__icon-calendar {
+    background-image: url("../assets/images/icons/comment/date.svg");
+    width: 15px;
+    height: 16px;
+  }
+
+  &__description {
+    line-height: 1.69;
+    font-size: 14px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+}

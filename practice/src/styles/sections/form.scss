@@ -1,0 +1,111 @@
+.form {
+  background-color: #f0f1f2;
+  font-family: var(--font-secondary);
+  height: 670px;
+  padding-top: 40px;
+  margin-left: 39px;
+  margin-left: 37px;
+  margin-bottom: 44px;
+  margin-right: 37px;
+
+  @include desktop {
+    padding-top: 50px;
+    height: 656px;
+  }
+
+  &__header {
+
+    &__title {
+      padding-bottom: 8px;
+    }
+
+    &__description {
+      font-weight: 600;
+    }
+  }
+
+  &__required {
+    @include flex-column;
+    justify-content: space-between;
+    padding-bottom: 8px;
+
+    @include desktop {
+      @include flex-row;
+    }
+
+    &__item {
+      @include flex-row;
+      align-items: center;
+      gap: 7px;
+      border-bottom: 1px solid #fff;
+      padding-top: 50px;
+      padding-bottom: 8px;
+
+      &:hover {
+        border-bottom: 2px solid #7d7d7d;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__label {
+      width: 285px;
+    }
+
+    @include desktop {
+      padding-top: 57px;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+
+  &__checkbox {
+    @include flex-row;
+    align-items: center;
+    gap: 4px;
+    padding-top: 38px;
+    padding-bottom: 43px;
+    border-top: 1px solid #fff;
+    margin-top: 73px;
+
+    @include desktop {
+      margin-top: 93px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
+
+  &__icon-user {
+    background-image: url("../assets/images/icons/form/user.svg");
+    width: 12px;
+    height: 13px;
+  }
+
+  &__icon-email {
+    background-image: url("../assets/images/icons/form/email.svg");
+    width: 15px;
+    height: 11px;
+  }
+
+  &__icon-website {
+    background-image: url("../assets/images/icons/form/website.svg");
+    width: 13px;
+    height: 12px;
+  }
+
+  &__icon-comment {
+    background-image: url("../assets/images/icons/form/comment.svg");
+    width: 14px;
+    height: 12px;
+  }
+}

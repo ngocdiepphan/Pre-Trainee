@@ -15,6 +15,7 @@
     @include desktop {
       height: 48px;
       @include flex-row;
+      padding-left: 187px;
     }
   }
 

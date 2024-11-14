@@ -7,7 +7,6 @@
   --color-quaternary: #ff5a3c;
   --color-gray-light: #666;
   /* End color */
-
   /* Start background */
   --background-color-primary: #fff;
   --background-color-second: #171b2a;
@@ -16,17 +15,14 @@
   --background-color-light: #f7f7fa;
   --background-color-accent: #ff5a3c;
   /* End background */
-
   /* Start color button */
   --btn-color-primary: #ff5a3c;
   /* End color button */
-
   /* Start font */
   --font-primary: "Poppins";
   --font-secondary: "Nunito";
   /* End font */
-
   /* Start border */
   --border-primary: #7d7d7d;
   /* End border */
-}
+}/*# sourceMappingURL=variables.css.map */

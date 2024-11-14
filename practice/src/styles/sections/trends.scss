@@ -1,0 +1,29 @@
+.trends {
+  &__list {
+    @include flex-column;
+    gap: 19px;
+    margin-top: 28px;
+  }
+
+  &__item {
+    @include flex-row;
+    gap: 11px;
+  }
+
+  &__icon-tick {
+    background-image: url("../assets/images/icons/trend/tick.svg");
+    width: 20px;
+    height: 18px;
+  }
+
+  &__description {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    line-height: 1.75;
+    font-size: 14px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+}
