@@ -1,0 +1,59 @@
+.follow {
+  padding-top: 42px;
+  margin-top: 22px;
+
+  &__social {
+    @include flex-row;
+    align-items: center;
+    gap: 13px;
+    padding-top: 20px;
+    padding-bottom: 29px;
+
+    &__item {
+      width: 40px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--background-color-light);
+
+      &:hover {
+        background-color: var(--background-color-accent);
+      }
+    }
+  }
+
+  &__icon-facebook {
+    background-image: url("../assets/images/icons/follow/facebook.svg");
+    width: 12px;
+    height: 21px;
+  }
+
+  &__icon-instagram {
+    background-image: url("../assets/images/icons/review/instagram.svg");
+    width: 16px;
+    height: 21px;
+
+    &:hover {
+      background-image: url("../assets/images/icons/follow/instagram.svg");
+    }
+  }
+
+  &__icon-twitter {
+    background-image: url("../assets/images/icons/follow/twitter.svg");
+    width: 18px;
+    height: 21px;
+  }
+
+  &__icon-youtube {
+    background-image: url("../assets/images/icons/follow/youtube.svg");
+    width: 21px;
+    height: 21px;
+  }
+
+  &__icon-linked {
+    background-image: url("../assets/images/icons/follow/linked.svg");
+    width: 18px;
+    height: 21px;
+  }
+}

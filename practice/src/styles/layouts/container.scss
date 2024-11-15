@@ -1,29 +1,23 @@
-.container {
-  padding-left: 56px;
-  padding-right: 56px;
-  width: 100%;
-  // max-width: 480px;
-
-  @include desktop {
-
-  }
-}
-
 .container-content {
   background-color: var(--background-color-primary);
-
-  @include desktop {
-    margin-left: 375px;
-  }
 }
 
 .container-wrapper {
+  max-width: 480px;
   @include desktop {
-    min-width: 1200px;
+    max-width: 1920px;
+    display: flex;
+    margin-inline: auto;
+    @include flex-column;
   }
 }
 
 .container-sidebar {
   padding-left: 34px;
   padding-right: 34px;
+}
+
+.container-footer {
+  width: 100%;
+  background-color: var(--background-color-second);
 }

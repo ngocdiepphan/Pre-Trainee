@@ -12,7 +12,7 @@
 <body>
   <!-- START HEADER -->
   <div class="container-wrapper">
-    <header class="container header-section">
+    <header class="header-section">
       <div class="header-section__content">
         <div class="header-section__wrapper">
           <div class="header-section__link">
@@ -32,12 +32,9 @@
           <span class="icon header-section__icon-pinterset"></span>
         </div>
       </div>
-    </header>
-    <!-- END HEADER -->
-    <main class="main">
 
       <!-- START NAVBAR -->
-      <nav class="container nav">
+      <nav class="nav">
         <h1 href="javascript:void(0)">
           <img src="./assets/images/logo/Logo.png" class="navbar__logo" alt="Picture Logo" />
         </h1>
@@ -58,21 +55,26 @@
       <!-- END NAVBAR -->
 
       <!-- START BANNER -->
-      <section class="container banner">
-        <h2 class="banner__title">Blog</h2>
-        <div class="banner__content">
-          <span class="icon banner__icon-menu"></span>
-          <p>Home > Blog Details</p>
+      <section class="banner">
+        <div class="banner__wrapper">
+          <h2 class="banner__title">Blog</h2>
+          <div class="banner__content">
+            <span class="icon banner__icon-menu"></span>
+            <p>Home > Blog Details</p>
+          </div>
         </div>
+        <img class="banner__image" src="assets/images/icons/banner/image-home.png" alt="">
       </section>
       <!-- END BANNER -->
+    </header>
+    <!-- END HEADER -->
 
+    <main class="main">
       <div class="main-section">
         <!-- START CONTENT -->
         <div class="container-content overview">
-          <!-- <img src="" alt="Picture overview"> -->
           <div class="overview__image"></div>
-            <!-- START OVERVIEW  -->
+          <!-- START OVERVIEW  -->
           <section class="overview__wrapper">
             <h3 class="overview__header">Delivering What Consumers Really Value?</h3>
             <ul class="overview__information">
@@ -349,8 +351,8 @@
             </div>
             <button class="btn btn-post">Post Comment</button>
           </section>
+          <!-- END FORM -->
         </div>
-        <!-- END FORM -->
         <!-- END CONTENT -->
 
         <!-- START SIDEBAR  -->
@@ -395,11 +397,250 @@
           </section>
           <!-- END SEARCH -->
 
+          <!-- START BLOG -->
+          <section class="blog search">
+            <h6 class="review__username search__header">News & Blogs</h6>
+            <ul class="blog__list">
+              <li class="blog__item">
+                <img class="blog__image" src="assets/images/blog/blog.png" alt="Picture blog">
+                <div class="blog__content">
+                  <p>Lorem ipsum dolor sit cing
+                    elit, sed do.</p>
+                  <div class="comment__calendar">
+                    <span class="icon comment__icon-calendar"></span>
+                    <span class="comment__calendar__date">June 24, 2021</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__item">
+                <img class="blog__image" src="assets/images/blog/blog.png" alt="Picture blog">
+                <div class="blog__content">
+                  <p>Lorem ipsum dolor sit cing
+                    elit, sed do.</p>
+                  <div class="comment__calendar">
+                    <span class="icon comment__icon-calendar"></span>
+                    <span class="comment__calendar__date">June 24, 2021</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__item">
+                <img class="blog__image" src="assets/images/blog/blog.png" alt="Picture blog">
+                <div class="blog__content">
+                  <p>Lorem ipsum dolor sit cing
+                    elit, sed do.</p>
+                  <div class="comment__calendar">
+                    <span class="icon comment__icon-calendar"></span>
+                    <span class="comment__calendar__date">June 24, 2021</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__item">
+                <img class="blog__image" src="assets/images/blog/blog.png" alt="Picture blog">
+                <div class="blog__content">
+                  <p>Lorem ipsum dolor sit cing
+                    elit, sed do.</p>
+                  <div class="comment__calendar">
+                    <span class="icon comment__icon-calendar"></span>
+                    <span class="comment__calendar__date">June 24, 2021</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- END BLOG-->
+
+          <!-- START CATEGORIES -->
+          <section class="search catagories">
+            <h6 class="review__username search__header">Top Catagories</h6>
+            <ul class="catagories__list">
+              <li class="catagories__item">
+                <p class="catagories__title">Apartment & office</p>
+                <div class="catagories__number">30</div>
+              </li>
+              <li class="catagories__item">
+                <p class="catagories__title">Picture studio</p>
+                <div class="catagories__number">48</div>
+              </li>
+              <li class="catagories__item">
+                <p class="catagories__title">Luxary Vilas</p>
+                <div class="catagories__number">23</div>
+              </li>
+              <li class="catagories__item">
+                <p class="catagories__title">Duplex House</p>
+                <div class="catagories__number">78</div>
+              </li>
+              <li class="catagories__item">
+                <p class="catagories__title">Marketing Policy</p>
+                <div class="catagories__number">60</div>
+              </li>
+            </ul>
+          </section>
+          <!-- END CATEGORIES -->
+
+          <!-- START  GALLERY-->
+          <section class="search gallery">
+            <h6 class="review__username search__header">Photo Gallery</h6>
+            <ul class="gallery__list">
+              <li class="gallery__item icon"></li>
+              <li class="gallery__item icon"></li>
+              <li class="gallery__item icon"></li>
+              <li class="gallery__item icon"></li>
+              <li class="gallery__item icon"></li>
+              <li class="gallery__item icon"></li>
+            </ul>
+          </section>
+          <!-- END GALLERY -->
+
+          <!-- START MESSAGE-->
+          <section class="search message">
+            <h6 class="review__username search__header message__header">Drop message</h6>
+            <form class="message__form">
+              <div class="message__field">
+                <span class="icon form__icon-user"></span>
+                <input type="text" placeholder="Your Name*" class="message__input">
+              </div>
+              <div class="message__field">
+                <span class="icon form__icon-email"></span>
+                <input type="email" placeholder="Your Email*" class="message__input">
+              </div>
+              <div class="message__field">
+                <span class="icon form__icon-comment"></span>
+                <textarea placeholder="Write Message" class="message__textarea"></textarea>
+              </div>
+              <button type="submit" class="btn btn-message">Send Message</button>
+            </form>
+          </section>
+          <!-- END MESSAGE-->
+
+          <!-- START TAGS -->
+          <section class="search tags">
+            <h6 class="review__username search__header message__header">Populer Tags</h6>
+
+            <ul class="tags__list">
+              <li class="tags__item">populer</li>
+              <li class="tags__item">agency</li>
+              <li class="tags__item">ux</li>
+              <li class="tags__item">creative</li>
+              <li class="tags__item">deliver</li>
+              <li class="tags__item">oil</li>
+              <li class="tags__item">ux</li>
+              <li class="tags__item">design</li>
+              <li class="tags__item">services</li>
+              <li class="tags__item">finance</li>
+              <li class="tags__item">car</li>
+              <li class="tags__item">startegy</li>
+            </ul>
+          </section>
+          <!-- END TAGS -->
+
+          <!-- START FOLLOW -->
+          <section class="search follow">
+            <h6 class="review__username search__header">Follow Us</h6>
+            <ul class="follow__social">
+              <li class="follow__social__item">
+                <span class="icon follow__icon-facebook"></span>
+              </li>
+              <li class="follow__social__item">
+                <span class="icon follow__icon-instagram"></span>
+              </li>
+              <li class="follow__social__item">
+                <span class="icon follow__icon-twitter"></span>
+              </li>
+              <li class="follow__social__item">
+                <span class="icon follow__icon-youtube"></span>
+              </li>
+              <li class="follow__social__item">
+                <span class="icon follow__icon-linked"></span>
+              </li>
+            </ul>
+          </section>
+          <!-- END FOLLOW -->
         </sidebar>
         <!-- START SIDEBAR  -->
       </div>
-
     </main>
-  </div>
 
+    <!-- START FOOTER -->
+    <footer class="container-footer">
+      <div class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <img class="footer__logo__header" src="./assets/images/logo/footer-logo.png" alt="Picture logo footer">
+            <p class="footer__intro">With over 1 million homes for sale available on the website.</p>
+            <div class="footer__social">
+              <img src="assets/images/footers/linkedin.png" alt="Picture linkedin">
+              <img src="assets/images/footers/facebook.png" alt="Picture facebook">
+              <img src="assets/images/footers/twitter.png" alt="Picture twitter">
+            </div>
+          </div>
+
+          <div class="footer__information">
+            <article class="footer__contact">
+              <div class="footer__contact-mb">
+                <h5 class="footer__title">Company</h5>
+                <span class="icon footer__icon-dropdown"></span>
+              </div>
+              <ul class="footer__information__list">
+                <li class="footer__information__item">About</li>
+                <li class="footer__information__item">Careers</li>
+                <li class="footer__information__item">Mobile</li>
+                <li class="footer__information__item">Blog</li>
+                <li class="footer__information__item">How we work?</li>
+              </ul>
+            </article>
+            <article class="footer__contact">
+              <div class="footer__contact-mb">
+                <h5 class="footer__title">Contact</h5>
+                <span class="icon footer__icon-dropdown"></span>
+              </div>
+              <ul class="footer__information__list">
+                <li class="footer__information__item">Help/FAQ</li>
+                <li class="footer__information__item">Press</li>
+                <li class="footer__information__item">Affiliates</li>
+                <li class="footer__information__item">Property owners</li>
+                <li class="footer__information__item">Partners</li>
+              </ul>
+            </article>
+            <article class="footer__contact">
+              <div class="footer__contact-mb">
+                <h5 class="footer__title">More</h5>
+                <span class="icon footer__icon-dropdown"></span>
+              </div>
+              <ul class="footer__information__list">
+                <li class="footer__information__item">Land fees</li>
+                <li class="footer__information__item">Property</li>
+                <li class="footer__information__item">Law tips</li>
+                <li class="footer__information__item">Badges</li>
+                <li class="footer__information__item">Privacy</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="footer__address">
+            <div class="">
+              <h5 class="footer__title">Head Office</h5>
+              <p class="footer__information__item">Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+                Charlottesville,
+                CA 45565</p>
+            </div>
+            <div>
+              <h5 class="footer__title">News letter</h5>
+              <div class="footer__mail">
+                <p class="footer__information__item">Enter your email address</p>
+                <span class="icon footer__icon-mail"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__connect">
+          <p class="footer__connect__address">email@gmail.com</p>
+          <p class="footer__connect__address">(123) 456-7890</p>
+          <p class="footer__copyright footer__connect__address">© 2021 Aeyman Megha All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer__accent"></div>
+    </footer>
+    <!-- END FOOTER -->
+  </div>
 </body>

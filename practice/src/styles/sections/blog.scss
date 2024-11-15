@@ -1,0 +1,31 @@
+.blog {
+  margin-top: 51px;
+  padding-top: 50px;
+
+  &__list {
+    @include flex-column;
+  }
+
+  &__item {
+    @include flex-row;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #707070;
+    margin-top: 30px;
+
+    &:hover {
+      border-bottom: 2px solid #7d7d7d;
+    }
+  }
+
+  &__image {
+    width: 94px;
+    height: 88px;
+  }
+
+  &__content {
+    @include flex-column;
+    gap: 12px;
+  }
+}

@@ -4,9 +4,11 @@
   align-items: center;
   gap: 25px;
   height: 90px;
+  border: none;
 
   @include desktop {
-    padding-left: 203px;
+    padding-left: 198px;
+    padding-right: 250px;
     gap: 327px;
   }
 

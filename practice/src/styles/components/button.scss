@@ -50,11 +50,20 @@
   height: 57px;
   position: absolute;
   right: 22px;
-    top: 51px;
+  top: 51px;
   background-color: #ff5722;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.btn-message {
+  width: 136px;
+  height: 44px;
+  font-size: 15px;
+  color: var(--color-tertiary);
+  border-radius: 3px;
+  margin-top: 10px;
 }
