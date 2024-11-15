@@ -4,6 +4,7 @@
 
 .container-wrapper {
   max-width: 480px;
+  
   @include desktop {
     max-width: 1920px;
     display: flex;

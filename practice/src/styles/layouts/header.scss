@@ -1,7 +1,6 @@
 .header-section {
-  background-color: var(--background-color-second);
-
   &__content {
+    padding-left: 40px;
     height: 88px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -11,6 +10,7 @@
     align-items: flex-start;
     gap: 15px;
     color: var(--color-tertiary);
+    background-color: var(--background-color-second);
 
     @include desktop {
       height: 48px;
